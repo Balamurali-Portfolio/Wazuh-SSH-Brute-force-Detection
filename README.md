@@ -62,10 +62,21 @@ Although the default Wazuh rule detected the attempts, its frequency did not ali
    - Review `/var/log/auth.log` on the target VM for failed SSH attempts.
    - Identify log patterns that indicate brute-force behavior.
 
+![analyze_inbuilt_rules](inbuilt_rule1.png)
+
+![analyze_inbuilt_rules](inbuilt_rule2.png)
+
+![analyze_inbuilt_rules](inbuilt_rule3.png)
+
+![analyze_inbuilt_rules](inbuilt_rule4.png)
+
 4. **Create Custom Wazuh Rule**
    - Define a rule in `/var/ossec/etc/rules/local_rules.xml`:
      - Trigger when 5 failed SSH logins occur within 60 seconds.
      - Use `frequency`, `timeframe`, and `group` tags appropriately.
+
+![create_your_own_rule](custom_rule.png)
+
 
 5. **Restart Wazuh Manager**
    - Apply rule changes by restarting the Wazuh manager.
