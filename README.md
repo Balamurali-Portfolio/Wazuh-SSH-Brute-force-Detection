@@ -47,6 +47,12 @@ Although the default Wazuh rule detected the attempts, its frequency did not ali
 2. **Observe Default Wazuh Alerts**
    - Monitor the Wazuh dashboard for alerts triggered by default SSH rules.
    - Note the frequency and thresholds of these alerts.
+     
+![command_to_view_alerts](alert_command.png)
+
+![generated_alerts](alerts.png)
+
+
 
 ---
 
