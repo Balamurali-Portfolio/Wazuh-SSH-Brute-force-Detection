@@ -40,6 +40,9 @@ Although the default Wazuh rule detected the attempts, its frequency did not ali
    - Using ``hydra`` try to brute force ssh service of the target VM, before that make sure that the ssh service is running on the target.
   
    - Generate multiple failed login attempts to trigger Wazuh rules.
+   - Before starting ``hydra`` check sshd service is running using the below command
+  
+![sshd_status](sshd.png)
 
 2. **Observe Default Wazuh Alerts**
    - Monitor the Wazuh dashboard for alerts triggered by default SSH rules.
